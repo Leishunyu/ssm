@@ -40,4 +40,13 @@
     </mvc:message-converters>
 	</mvc:annotation-driven>
 	<import resource="classpath*:spring-mybatis.xml"/>
+	<bean id="exceptionResolver"
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="java.lang.Exception">error</prop>
+				<prop key="java.lang.Throwable">error</prop>
+			</props>
+		</property>
+	</bean>
 </beans>

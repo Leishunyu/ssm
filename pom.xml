@@ -17,16 +17,28 @@
         <httpclient.version>4.4.1</httpclient.version>
         <jackson.version>2.5.3</jackson.version>
         <gson.version>2.5</gson.version>
-        <yaml.version>1.8</yaml.version>
-        <bouncycastle.version>1.52</bouncycastle.version>
 	</properties>
 	<dependencies>
-		
+		<dependency>
+			    <groupId>commons-net</groupId>
+			    <artifactId>commons-net</artifactId>
+			    <version>1.4.1</version>
+		</dependency>
+		<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>1.9</version>
+			</dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>${gson.version}</version>
         </dependency>
+        <dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.7</version>
+		</dependency>
 		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
@@ -195,6 +207,13 @@
 	        <artifactId>mybatis-paginator</artifactId>  
 	        <version>1.2.10</version>  
 	    </dependency>
+	    <dependency>
+			<groupId>epps-merchantsignature-0.0.3-jar-with-dependencies</groupId>
+			<artifactId>epps-merchantsignature-0.0.3-jar-with-dependencies.jar</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/epps-merchantsignature-0.0.3-jar-with-dependencies.jar</systemPath>
+		</dependency>
 		</dependencies>
 	<repositories>
 		<repository>
